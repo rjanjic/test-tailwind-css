@@ -6,7 +6,7 @@ export default ({ headline, text, image }) => (
             <img
                 src={image}
                 alt=""
-                className="App-logo h-12 w-12 rounded-full"
+                className="h-12 w-12 rounded-full"
             />
         </div>
         <div className="ml-6 pt-1">

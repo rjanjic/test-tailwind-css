@@ -31,7 +31,7 @@
 }
 
 .headline {
-    // md:text-gray-600 doesn't work with modules
+    /* md:text-gray-600 doesn't work with modules */
     composes: text-xl text-gray-700 from global;
 }
 
