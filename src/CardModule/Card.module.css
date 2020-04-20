@@ -1,0 +1,39 @@
+.card {
+    composes: w-full mx-auto mt-4 flex flex-grow-0 p-6 bg-white rounded-lg shadow-xl from global;
+}
+
+.logoPlaceholder {
+    composes: flex-shrink-0 from global;
+}
+
+.logo {
+    pointer-events: none;
+    composes: h-12 w-12 rounded-full from global;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation: spin infinite 20s linear;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.description {
+    composes: ml-6 pt-1 from global;
+}
+
+.headline {
+    composes: text-xl text-gray-700 'md:text-gray-600' from global;
+}
+
+.text {
+    composes: text-base text-gray-600 from global;
+}
